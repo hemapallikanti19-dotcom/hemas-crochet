@@ -101,17 +101,14 @@ nav a:hover {
 
     justify-content: center;
 }
-
-
-.product-card {
-    background-color: rgb(233, 61, 18);
+     .product-card {
+    background: linear-gradient(135deg, #dc980f, #fce4ec);
     padding: 20px;
     border-radius: 20px;
     text-align: center;
     color: #3d2b1f;
     box-shadow: 0 6px 20px rgba(61, 43, 31, 0.10);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
    
     .product-card img {
@@ -222,26 +219,44 @@ header {
 }
 
 .about {
-    background-color: rgb(80, 221, 4);
-    margin: 30px 40px;
-    padding: 30px 20px;
+    background: linear-gradient(135deg, #dc980f, #fce4ec);
+    margin: 40px auto;
+    padding: 35px 30px;
     border-radius: 20px;
     text-align: center;
-
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(61, 43, 31, 0.12);
 }
+
  .about,
 .contact {
-    background-color: rgb(55, 241, 3);
-    margin: 30px 40px;
-    padding: 30px 20px;
-    border-radius: 20px;
+  background: linear-gradient(135deg, #649dc3, #fce4ec);
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 25px;
     text-align: center;
-
+    box-shadow: 0 12px 30px rgba(61, 43, 31, 0.15);
+    position: relative;
+    overflow: hidden;
 }
-.contact h2 {
-    color: #3d2b1f;
-    font-size: 28px;
+   .contact::before {
+    content: "🧶😄❤️";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 45px;
+    opacity: 0.15;
+}
+      .contact h2 {
+    color: #b5651d;
     margin-bottom: 10px;
+}
+
+.contact h3 {
+    color: #3d2b1f;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .about p,
@@ -252,4 +267,30 @@ header {
 .contact form {
     margin-top: 25px;
     
+}
+    .contact form {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #3d2b1f;
+    font-weight: bold;
+}
+
+.contact form input,
+.contact form select {
+    padding: 10px 12px;
+    border: 1px solid #e2bd07;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.contact form textarea {
+    width: 100%;
 }
