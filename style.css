@@ -1,0 +1,255 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(
+        135deg,
+        #fff3d6,
+        #fce4ec,
+        #e8ddf5
+    );
+    color: #4a2c2a;
+}
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+      
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+   nav a {
+    text-decoration: none;
+    color: #3d2b1f;
+    margin-left: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+nav a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+  .hero {
+    text-align: center;
+    padding: 90px 20px;
+    margin: 40px;
+    background: linear-gradient(135deg, #de0c52);
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(61, 43, 31, 0.12);
+}
+
+
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+  .explore-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3d2b1f;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #3d2b1f;
+    color: white;
+}
+.products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap:0px;
+    row-gap: 40px;
+    gap: 40px;
+
+    justify-content: center;
+}
+
+
+.product-card {
+    background-color: rgb(233, 61, 18);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: #3d2b1f;
+    box-shadow: 0 6px 20px rgba(61, 43, 31, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+   
+    .product-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+   .product-card img:hover {
+    transform: scale(1.05);
+}
+
+ .product-card p:last-child {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 15px;
+}
+ .product-card button {
+    background-color: #3d2b1f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+ .product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(61, 43, 31, 0.18);
+}
+ .product-card button:hover {
+    transform: scale(1.05);
+}
+header {
+    background-color: #68e20a;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+ nav h2 {
+    color: #3d2b1f;
+}
+ nav a:hover {
+    color: #ff0000;
+}
+ .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero button:hover {
+    transform: scale(1.05);
+}
+ .hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+ .products > h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #140801;
+}
+ @media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        margin: 20px;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+ footer {
+    background-color: #3d2b1f;
+    color: rgb(32, 247, 8);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+ .about {
+    background-color: rgb(49, 234, 7);
+    margin: 50px 40px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #3d2b1f;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about {
+    background-color: rgb(80, 221, 4);
+    margin: 30px 40px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+ .about,
+.contact {
+    background-color: rgb(55, 241, 3);
+    margin: 30px 40px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.contact h2 {
+    color: #3d2b1f;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about p,
+.contact p {
+    color: #3d2b1f;
+
+}
+.contact form {
+    margin-top: 25px;
+    
+}
